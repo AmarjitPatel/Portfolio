@@ -169,6 +169,7 @@ const Hero = () => {
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
             onClick={scrollToAbout}
+            
           >
             <FaArrowDown />
           </motion.div>
