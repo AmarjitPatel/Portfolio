@@ -44,7 +44,7 @@ const Experience = () => {
         >
           <h2 className="section-title">Work Experience</h2>
           <p className="section-subtitle">
-            My professional journey in software development, showcasing growth, achievements, and contributions to various organizations.
+            My professional journey in MERN Stack Web development, showcasing growth, achievements, and contributions to various organizations.
           </p>
         </motion.div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowUp, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaArrowUp } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -42,7 +42,7 @@ const Footer = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3>Your Name</h3>
+            <h3>Amarjit Patel</h3>
             <p>
               A passionate Full Stack Developer dedicated to creating 
               innovative digital solutions and exceptional user experiences.
@@ -117,8 +117,7 @@ const Footer = () => {
         >
           <div className="footer-bottom-content">
             <p>
-              © {currentYear} Amarjit Patel | All rights reserved | Made with{' '}
-              <FaHeart className="heart-icon" /> 
+              © {currentYear} Amarjit Patel | All rights reserved
             </p>
             
             <motion.button
