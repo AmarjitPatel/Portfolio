@@ -1,0 +1,276 @@
+.experience {
+  background: white;
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  padding: 2rem 0;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #2563eb, #3b82f6, #60a5fa);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 45%;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 55%;
+  text-align: left;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  width: 20px;
+  height: 20px;
+  background: #2563eb;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e2e8f0;
+}
+
+.timeline-item.left::before {
+  right: -12px;
+}
+
+.timeline-item.right::before {
+  left: -12px;
+}
+
+.timeline-content {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #2563eb;
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-logo {
+  flex-shrink: 0;
+}
+
+.logo-emoji {
+  font-size: 2.5rem;
+  background: #dbeafe;
+  padding: 0.75rem;
+  border-radius: 12px;
+  display: block;
+}
+
+.experience-info {
+  flex: 1;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.job-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.job-period,
+.job-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.job-period svg,
+.job-location svg {
+  color: #2563eb;
+}
+
+.job-description {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.job-achievements h4,
+.job-technologies h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.job-achievements ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.job-achievements li {
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.job-achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-item {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background: #bfdbfe;
+  transform: translateY(-2px);
+}
+
+.experience-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.cta-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .experience-timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: calc(100% - 40px);
+    left: 40px !important;
+    text-align: left;
+  }
+
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    left: -32px;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .job-meta {
+    justify-content: center;
+  }
+
+  .experience-cta {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    width: calc(100% - 30px);
+    left: 30px !important;
+  }
+
+  .timeline-item.left::before,
+  .timeline-item.right::before {
+    left: -25px;
+  }
+
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .logo-emoji {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  .job-title {
+    font-size: 1.2rem;
+  }
+
+  .experience-cta {
+    padding: 1.5rem;
+  }
+}
