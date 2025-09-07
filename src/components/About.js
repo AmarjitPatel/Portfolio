@@ -49,7 +49,7 @@ const About = () => {
             </p>
             
             <p>
-              With over 3 years of experience in software development, I've worked on various projects 
+              With over 1 years of experience in development, I've worked on various projects 
               ranging from small business websites to large-scale enterprise applications. I'm constantly 
               learning and staying up-to-date with the latest technologies and best practices.
             </p>
@@ -62,7 +62,7 @@ const About = () => {
 
             <div className="about-stats">
               <div className="stat">
-                <h4>Fresher</h4>
+                <h4>1</h4>
                 <p>Years Experience</p>
               </div>
               <div className="stat">
