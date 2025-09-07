@@ -46,7 +46,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <h2 onClick={() => scrollToSection('hero')}>Portfolio</h2>
+            <h2 onClick={() => scrollToSection('hero')}>Amarjit Patel</h2>
           </motion.div>
 
           <nav className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
