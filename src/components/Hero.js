@@ -96,8 +96,8 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <a
-                  href="/Resume.pdf"
-                  download="Resume.pdf"
+                  href="/AmarjitPatel_CV.pdf"
+                  download="AmarjitPatel_CV.pdf"
                   className="px-6 py-3 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition"
                 >
                   Download CV
